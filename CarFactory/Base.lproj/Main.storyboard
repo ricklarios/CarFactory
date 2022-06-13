@@ -28,12 +28,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Crear Automóvil MAZDA"/>
+                                <connections>
+                                    <action selector="createMazdaAuto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWF-Kt-S4e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT4-NI-hMX">
                                 <rect key="frame" x="115" y="219.5" width="184" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Crear Automóvil sencillo"/>
+                                <connections>
+                                    <action selector="createBasicAuto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80l-JL-KXe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,17 +56,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="2Xx-PP-vcC"/>
                     <connections>
-                        <segue destination="8cz-sj-37q" kind="show" id="8bt-S7-mfF"/>
+                        <segue destination="8cz-sj-37q" kind="show" identifier="segueSecondScreen" id="8bt-S7-mfF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Screen View Controller-->
         <scene sceneID="Tt3-In-rO0">
             <objects>
-                <viewController id="8cz-sj-37q" sceneMemberID="viewController">
+                <viewController id="8cz-sj-37q" customClass="SecondScreenViewController" customModule="CarFactory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0qJ-a1-umd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,18 +76,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Encender"/>
+                                <connections>
+                                    <action selector="encender:" destination="8cz-sj-37q" eventType="touchUpInside" id="KyZ-N4-97f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rua-zc-AiS">
                                 <rect key="frame" x="172" y="354" width="71" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagar:" destination="8cz-sj-37q" eventType="touchUpInside" id="yaw-02-obk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-1a-f9Q">
                                 <rect key="frame" x="168" y="433" width="78" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="8cz-sj-37q" eventType="touchUpInside" id="I7b-7f-Ka7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-9s-x1D">
                                 <rect key="frame" x="53" y="530" width="308" height="307"/>
@@ -107,6 +122,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fhv-7a-e2a"/>
+                    <connections>
+                        <outlet property="myImageView" destination="szB-ZC-aH6" id="okQ-r4-Afl"/>
+                        <outlet property="myLabel" destination="LgW-9s-x1D" id="S9H-Oq-hX2"/>
+                        <outlet property="showInfo" destination="fhv-7a-e2a" id="dMR-ut-VOy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2KZ-hT-l5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
