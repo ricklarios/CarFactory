@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		// Nos comunicamos directamente entre clases incluso deotros archivos
+		let automovil = Automovil()
+		print("Automovil encendido? \(automovil.encender())")
 	}
 
 
