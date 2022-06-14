@@ -16,8 +16,8 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		// Nos comunicamos directamente entre clases incluso de otros archivos
-		let automovil = Automovil()
-		print("Automovil encendido? \(automovil.encender())")
+		// let automovil = Automovil()
+		
 	}
 
 	@IBAction func createBasicAuto(_ sender: Any) {

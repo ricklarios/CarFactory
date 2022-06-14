@@ -24,10 +24,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g61-GI-g6K">
-                                <rect key="frame" x="114.5" y="302.5" width="185" height="33"/>
+                                <rect key="frame" x="79.5" y="302.5" width="255" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Crear Automóvil MAZDA"/>
+                                <state key="normal" title="Crear Automóvil MAZDA eléctrico"/>
                                 <connections>
                                     <action selector="createMazdaAuto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWF-Kt-S4e"/>
                                 </connections>
@@ -71,61 +71,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcJ-3s-KgT">
-                                <rect key="frame" x="164" y="293" width="86" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Encender"/>
-                                <connections>
-                                    <action selector="encender:" destination="8cz-sj-37q" eventType="touchUpInside" id="KyZ-N4-97f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rua-zc-AiS">
-                                <rect key="frame" x="172" y="354" width="71" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
-                                <connections>
-                                    <action selector="apagar:" destination="8cz-sj-37q" eventType="touchUpInside" id="yaw-02-obk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-1a-f9Q">
-                                <rect key="frame" x="168" y="433" width="78" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
-                                <connections>
-                                    <action selector="acelerar:" destination="8cz-sj-37q" eventType="touchUpInside" id="I7b-7f-Ka7"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-9s-x1D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-9s-x1D">
                                 <rect key="frame" x="53" y="530" width="308" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFy-eP-U4J">
-                                <rect key="frame" x="137" y="52" width="155" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szB-ZC-aH6">
+                                <rect key="frame" x="20" y="159" width="374" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="RQV-dO-Uob"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcJ-3s-KgT">
+                                <rect key="frame" x="20" y="339" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Encender"/>
+                                <connections>
+                                    <action selector="encender:" destination="8cz-sj-37q" eventType="touchUpInside" id="KyZ-N4-97f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rua-zc-AiS">
+                                <rect key="frame" x="20" y="390" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagar:" destination="8cz-sj-37q" eventType="touchUpInside" id="yaw-02-obk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-1a-f9Q">
+                                <rect key="frame" x="20" y="441" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="8cz-sj-37q" eventType="touchUpInside" id="I7b-7f-Ka7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFy-eP-U4J">
+                                <rect key="frame" x="20" y="108" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Mostrar información"/>
+                                <connections>
+                                    <action selector="showInfo:" destination="8cz-sj-37q" eventType="touchUpInside" id="cZg-yl-wST"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szB-ZC-aH6">
-                                <rect key="frame" x="20" y="111" width="374" height="160"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ic8-jQ-wSf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="szB-ZC-aH6" firstAttribute="centerX" secondItem="0qJ-a1-umd" secondAttribute="centerX" id="vX3-L1-155"/>
+                            <constraint firstItem="cFy-eP-U4J" firstAttribute="leading" secondItem="Ic8-jQ-wSf" secondAttribute="leading" constant="20" id="1Vi-kx-YVx"/>
+                            <constraint firstItem="Ic8-jQ-wSf" firstAttribute="trailing" secondItem="cFy-eP-U4J" secondAttribute="trailing" constant="20" id="3jF-4r-pZ3"/>
+                            <constraint firstItem="szB-ZC-aH6" firstAttribute="top" secondItem="cFy-eP-U4J" secondAttribute="bottom" constant="20" id="5fX-qy-Xu4"/>
+                            <constraint firstItem="cFy-eP-U4J" firstAttribute="top" secondItem="Ic8-jQ-wSf" secondAttribute="top" constant="20" id="6ii-fj-MmR"/>
+                            <constraint firstItem="rua-zc-AiS" firstAttribute="top" secondItem="dcJ-3s-KgT" secondAttribute="bottom" constant="20" id="7Gs-Zj-zF3"/>
+                            <constraint firstItem="rua-zc-AiS" firstAttribute="leading" secondItem="Ic8-jQ-wSf" secondAttribute="leading" constant="20" id="Knx-p3-TtW"/>
+                            <constraint firstItem="Ic8-jQ-wSf" firstAttribute="trailing" secondItem="rua-zc-AiS" secondAttribute="trailing" constant="20" id="LVu-yK-5oP"/>
+                            <constraint firstItem="Ic8-jQ-wSf" firstAttribute="trailing" secondItem="szB-ZC-aH6" secondAttribute="trailing" constant="20" id="ZVZ-Cc-sM3"/>
+                            <constraint firstItem="Ic8-jQ-wSf" firstAttribute="trailing" secondItem="dcJ-3s-KgT" secondAttribute="trailing" constant="20" id="dAu-RJ-37V"/>
+                            <constraint firstItem="dcJ-3s-KgT" firstAttribute="top" secondItem="szB-ZC-aH6" secondAttribute="bottom" constant="20" id="eVw-Cc-DR1"/>
+                            <constraint firstItem="Pom-1a-f9Q" firstAttribute="top" secondItem="rua-zc-AiS" secondAttribute="bottom" constant="20" id="l2i-Kp-t2g"/>
+                            <constraint firstItem="dcJ-3s-KgT" firstAttribute="leading" secondItem="Ic8-jQ-wSf" secondAttribute="leading" constant="20" id="lF8-JH-Wgm"/>
+                            <constraint firstItem="szB-ZC-aH6" firstAttribute="leading" secondItem="Ic8-jQ-wSf" secondAttribute="leading" constant="20" id="vS3-2L-DNn"/>
+                            <constraint firstItem="Ic8-jQ-wSf" firstAttribute="trailing" secondItem="Pom-1a-f9Q" secondAttribute="trailing" constant="20" id="xtj-PZ-xoc"/>
+                            <constraint firstItem="Pom-1a-f9Q" firstAttribute="leading" secondItem="Ic8-jQ-wSf" secondAttribute="leading" constant="20" id="zeM-Hv-xdr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fhv-7a-e2a"/>
                     <connections>
                         <outlet property="myImageView" destination="szB-ZC-aH6" id="okQ-r4-Afl"/>
                         <outlet property="myLabel" destination="LgW-9s-x1D" id="S9H-Oq-hX2"/>
-                        <outlet property="showInfo" destination="fhv-7a-e2a" id="dMR-ut-VOy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2KZ-hT-l5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
