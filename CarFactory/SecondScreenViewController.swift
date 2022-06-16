@@ -25,11 +25,13 @@ class SecondScreenViewController: UIViewController {
 		switch tipoAutomovil {
 		case 0:
 			automovilNormal = Automovil()
+			myImageView.image = UIImage(named: "automovil")
 			print("Se ha creado el automovil básico eléctrico correctamente")
 			myLabel.text = "Se ha creado el automovil básico correctamente"
 			
 		case 1:
 			autoElectrico = AutomovilElectrico()
+			myImageView.image = UIImage(named: "autoelectrico")
 			print("Se ha creado el automovil MAZDA eléctrico correctamente")
 			myLabel.text = "Se ha creado el automovil MAZDA eléctrico correctamente"
 			autoElectrico!.color = "azul"
